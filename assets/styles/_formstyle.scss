@@ -1,0 +1,125 @@
+// form-heading style
+.form-heading {
+  font-size: 2.5rem;
+  color: $darkGrey;
+}
+
+// form styling
+form {
+  accent-color: $darkGreen;
+  color: $darkGrey;
+  input {
+    font-size: 1.6rem;
+    // margin-bottom: 2rem;
+  }
+  label {
+    font-size: 1.6rem;
+    font-weight: 500;
+    &::after {
+      content: " *";
+    }
+  }
+  input[type="text"],
+  input[type="email"] {
+    font-family: karla;
+    line-height: 1.1;
+    width: 100%;
+    padding: 1rem 0 1rem 2rem;
+    border-radius: 0.5rem;
+    border: 0.15rem solid $grey;
+    &:focus {
+      outline: none;
+      border: 0.2rem solid $darkGreen;
+    }
+  }
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+    &:focus {
+      outline: none;
+    }
+  }
+  fieldset {
+    border: none;
+  }
+  legend {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    &::after {
+      content: " *";
+    }
+  }
+  .input-control {
+    margin-bottom: 2rem;
+  }
+  .error input,
+  .error textarea {
+    border-color: $red;
+  }
+  .error-display {
+    color: $red;
+    font-size: 1.2rem;
+  }
+  .radio-border {
+    margin-bottom: 2rem;
+    display: flex;
+    border: 1px solid $grey;
+    padding: 0.5rem 0 0.5rem 2rem;
+    border-radius: 0.5rem;
+    input,
+    label {
+      cursor: pointer;
+    }
+    label::after {
+      content: none;
+    }
+    &:focus-within {
+      border: 0.2rem solid $darkGreen;
+      background-color: $lightGreen;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    // margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    border-color: $grey;
+    padding: 1rem;
+    font-family: karla;
+    line-height: 1.5;
+    &:focus {
+      outline: none;
+      border: 0.2rem solid $darkGreen;
+    }
+  }
+
+  .consent-agreement {
+    display: flex;
+    margin-bottom: 3rem;
+    input,
+    label {
+      cursor: pointer;
+    }
+    label {
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+  }
+  button {
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.2rem 0;
+    font-family: karla;
+    font-size: 1.5rem;
+    font-weight: 450;
+    color: $white;
+    background: $darkGreen;
+    cursor: pointer;
+    &:hover {
+      background: $darkerGreen;
+    }
+  }
+}

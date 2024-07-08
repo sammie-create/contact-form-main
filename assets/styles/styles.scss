@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+$lightGreen: hsl(148, 38%, 91%);
+$darkGreen: hsl(169, 82%, 27%);
+$darkerGreen: hsl(169, 61%, 19%);
+$red: hsl(0, 66%, 54%);
+$white: hsl(0, 0%, 100%);
+$grey: hsl(186, 15%, 59%);
+$darkGrey: hsl(187, 24%, 22%);
+
+@font-face {
+  font-family: karla;
+  src: url(/assets/fonts/Karla-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: karlaItalic;
+  src: url(/assets/fonts/Karla-Italic-VariableFont_wght.ttf);
+}
+
+:root {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $lightGreen;
+
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: karla;
+}
+
+main {
+  background: $white;
+  // width: fit-content;
+  max-width: 42rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+@import "./formstyle";
+
+// Responsive Design
+@media only screen and (min-width: 768px) {
+  body {
+    padding: 6rem;
+  }
+  main {
+    // min-width: 52rem;
+    min-width: 60rem;
+    // max-width: 100rem;
+  }
+  form {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+    .email {
+      grid-column: 1 / span 2;
+    }
+    .fieldset {
+      grid-column: 1 / span 2;
+      display: flex;
+      column-gap: 2rem;
+      .radio-border {
+        flex: 1;
+      }
+    }
+    .message,
+    .consent-agreement,
+    .button {
+      grid-column: 1 / span 2;
+    }
+    .message textarea {
+      height: 15rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 10rem 0;
+  }
+}

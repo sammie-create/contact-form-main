@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+
+    <title>Frontend Mentor | Contact form</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="form-heading">Contact Us</h1>
+      <form action="/" id="form">
+        <!-- FIRSTNAME -->
+        <div class="input-control fname">
+          <label for="fname">First Name</label><br />
+          <input type="text" id="fname" name="fname" /><br />
+          <div class="error-display"></div>
+        </div>
+
+        <!-- LASTNAME -->
+        <div class="input-control lname">
+          <label for="lname">Last Name</label><br />
+          <input type="text" id="lname" name="lname" /><br />
+          <div class="error-display"></div>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="input-control email">
+          <label for="email">Email Address</label><br />
+          <input type="email" id="email" name="email" /><br />
+          <div class="error-display"></div>
+        </div>
+
+        <!-- RADIO OPTIONS -->
+        <fieldset class="fieldset">
+          <legend>Query Type</legend>
+          <div class="radio-border input-control">
+            <input
+              type="radio"
+              id="general_enquiry"
+              name="query_type"
+              value="general_enquiry"
+            />
+            <label for="general_enquiry">General Enquiry</label>
+          </div>
+
+          <div class="radio-border input-control">
+            <input
+              type="radio"
+              id="support_request"
+              name="query_type"
+              value="support_request"
+            />
+            <label for="support_request">Support Request</label>
+          </div>
+        </fieldset>
+
+        <!-- MESSAGE -->
+        <div class="input-control message">
+          <label for="message">Message</label><br />
+          <textarea name="message" id="message" rows="10"></textarea><br />
+          <div class="error-display"></div>
+        </div>
+
+        <!-- CHECKBOX -->
+        <div class="consent-agreement input-control">
+          <input
+            type="checkbox"
+            name="consent"
+            id="consent"
+            value="consent_agreement"
+          />
+          <label for="consent">I consent to being contacted by the team</label>
+          <div class="error-display"></div>
+        </div>
+
+        <!-- BUTTON -->
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Samuel Durumba</a>.
+    </div>
+
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
