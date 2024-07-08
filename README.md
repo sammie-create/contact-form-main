@@ -1,0 +1,1 @@
+Creating my first contact form using SASS and JavaScript was an exciting and rewarding experience. The form combines the power of SASS for sleek, responsive design with the dynamic functionality of JavaScript for seamless user interaction. It features custom styling, although it's yet to be fully funtional, i'll work more on that subsequently, but like i said i am excited.
